@@ -1,6 +1,8 @@
 import os
 import random
 import time,keyboard
+def clear():
+  os.system('cls' if os.name == 'nt' else 'clear')
 time1 = 0
 a_counter = 0
 b_counter = 0
@@ -96,7 +98,7 @@ while not end:
     dump = ""
     for ch in scene:
         dump += ch
-    os.system('cls')
+    clear()
     print(dump)
     if a_x == x and a_y == y:
         eat = True

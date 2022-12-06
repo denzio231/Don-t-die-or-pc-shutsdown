@@ -114,4 +114,4 @@ while not end:
     
     eat = False
     
-os.system('shutdown /s')
+os.system('shutdown /s' if os.name == 'nt' else 'shutdown -h now')

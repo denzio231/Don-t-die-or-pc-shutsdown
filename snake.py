@@ -23,7 +23,7 @@ length = 3
 x = 0
 y = 0
 parts = []
-scene = ("*"*30 + "\n")*30
+scene = ("."*30 + "\n")*30
 ax_choice = []
 ay_choice = []
 dont_put_apples_here = []
@@ -79,7 +79,7 @@ while not end:
     parts.append(x+(y*31))
     scene[x+(y*31)] = "S"
     if counter == length :
-        scene[parts[0]] = "*"
+        scene[parts[0]] = "."
         del parts[0]
         counter -= 1
     for indices in parts:
